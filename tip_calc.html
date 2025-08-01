@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>チップ計算アプリ</title>
@@ -10,14 +11,18 @@
       background-color: #f8f8f8;
       text-align: center;
     }
-    input, button {
+
+    input,
+    button {
       font-size: 1.2em;
       margin: 0.5em;
     }
+
     .buttons button {
       margin: 0.3em;
       padding: 0.5em 1em;
     }
+
     #result {
       margin-top: 1.5em;
       font-size: 1.3em;
@@ -25,6 +30,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>💰 チップ計算アプリ</h1>
 
@@ -45,7 +51,7 @@
       if (!isNaN(amount)) {
         const tip = amount * (percent / 100);
         const total = amount + tip;
-        document.getElementById('result').innerText = 
+        document.getElementById('result').innerText =
           `チップ: $${tip.toFixed(2)}（${percent}%）\n合計: $${total.toFixed(2)}`;
       } else {
         document.getElementById('result').innerText = "金額を正しく入力してね";
@@ -53,4 +59,5 @@
     }
   </script>
 </body>
+
 </html>
