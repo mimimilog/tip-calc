@@ -44,20 +44,7 @@
   </div>
 
   <div id="result"></div>
-
-  <script>
-    function calculateTip(percent) {
-      const amount = parseFloat(document.getElementById('amount').value);
-      if (!isNaN(amount)) {
-        const tip = amount * (percent / 100);
-        const total = amount + tip;
-        document.getElementById('result').innerText =
-          `チップ: $${tip.toFixed(2)}（${percent}%）\n合計: $${total.toFixed(2)}`;
-      } else {
-        document.getElementById('result').innerText = "金額を正しく入力してね";
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
