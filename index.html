@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>チップ計算アプリ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+
+    input,
+    button {
+      font-size: 1.2em;
+      margin: 0.5em;
+    }
+
+    .buttons button {
+      margin: 0.3em;
+      padding: 0.5em 1em;
+    }
+
+    #result {
+      margin-top: 1.5em;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💰 チップ計算アプリ</h1>
+
+  <label for="amount">金額（ドル）</label><br>
+  <input type="number" id="amount" placeholder="例: 50"><br>
+
+  <div class="buttons">
+    <button onclick="calculateTip(10)">10%</button>
+    <button onclick="calculateTip(15)">15%</button>
+    <button onclick="calculateTip(20)">20%</button>
+  </div>
+
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
